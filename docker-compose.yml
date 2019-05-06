@@ -1,0 +1,23 @@
+version: '3.3'
+services:
+  wildfly:
+    build:
+     context: configs
+     dockerfile: Dockerfile
+    image: mvilche/wildfly:10-jdk8
+    volumes:
+      - $PWD/wildfly10:/opt/wildfly10
+    env_file:
+      - Config.env
+    ports:
+     - "8081:8080"
+    networks:
+     - integracion
+
+networks:
+  integracion:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+         - subnet: 142.18.0.0/16
