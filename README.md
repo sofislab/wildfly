@@ -24,7 +24,7 @@ docker-compose up
 
 | Directorio | Detalle |
 | ------ | ------ |
-| /opt/wildfly | Directorio raiz |
+| /opt/wildfly15 | Directorio raiz |
 
 
 ### Variables
@@ -35,6 +35,14 @@ docker-compose up
 | TIMEZONE | Define la zona horaria a utilizar (America/Montevideo, America/El_salvador) |
 | USER_ID | Define id del grupo que iniciará el servicio (Ej: 1002) |
 | CUSTOM_JAVA_OPTS | custom java opts |
+| DATABASE-NAME | Nombre base de datos |
+| DATABASE-HOST | Host base de datos |
+| DATABASE-PUERTO | Puerto base de datos |
+| DATABASE-USUARIO | Usuario base de datos |
+| DATABASE-PASSWORD | Contraseña base de datos |
+| JNDI-NAME | Jndi name |
+| POOL-NAME | Pool name |
+
 
 
 License
