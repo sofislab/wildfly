@@ -4,9 +4,9 @@ services:
     build:
      context: configs
      dockerfile: Dockerfile
-    image: mvilche/wildfly:10-jdk8
+    image: sofislab/wildfly:15-jdk11
     volumes:
-      - $PWD/wildfly10:/opt/wildfly10
+      - $PWD/wildfly15:/opt/wildfly15
     env_file:
       - Config.env
     ports:
